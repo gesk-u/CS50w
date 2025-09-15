@@ -38,7 +38,7 @@ nav {
   display: flex;
   gap: 20px; 
   margin-left: auto;
-  padding: 20px 25px;           /* space between links */
+  padding: 20px 25px;        
 }
 
 .links a {
@@ -253,7 +253,7 @@ nav {
   color: #202124;
   border-radius: 2px;
   cursor: pointer;
-  padding: 5px 12px;           /* 👈 keeps button only as wide as text */
+  padding: 5px 12px;           
   
 }
 
