@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  height: 100vh;   
+  background: #202124;
+  position: relative;    
+}
+
+body, input, button {
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: var(--YLNNHc);
+}
+
+.center {
+  height: calc(100vh - 50px); 
+  display: flex;
+  flex-direction: column;  
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 190px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: #202124;
+  padding: 8px 8px;
+  
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 20px; 
+  margin-left: auto;
+  padding: 20px 25px;           /* space between links */
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+.ad_s{
+  
+  margin: 25px 35px;
+  font-size: 25px;
+
+}
+
+#ad_s {  
+  font-weight: inherit;
+  font-style: inherit;  
+  color: #f28b82;
+  font-size: 100%;
+  margin-left: 10px;
+  
+}
+
+.ad_border{
+  margin: 0 -30px;
+  padding: 0;
+  width: 150%;  
+  border-bottom: 1px solid #444746;
+}
+
+
+.google{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.googleadv{
+  padding: 20px 25px;
+  float:left;
+  display: flex;
+  flex-direction: column;
+}
+
+.gimg{
+  color: #4487f6;
+  font: 16px/16px Arial,sans-serif;
+  position: absolute;
+  left: 215px;
+  bottom: 0px;
+  white-space: nowrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #4d5156;
+  border-radius: 26px;
+  width: 582px;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.search-box .icon {
+  width: 20px;
+  height: 20px;
+  fill: #e8eaed;
+  margin-right: 10px;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+.search{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  height:200px;
+}
+
+
+.search input[type="text"]{
+  width: 582px;
+  height:50px;
+  border: 1px solid transparent;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 20px;
+  background: #4d5156;
+  border-radius: 15px;
+  color: white;
+}
+
+
+.button{
+  margin: 11px 4px 4px 11px; 
+  height: 60px;
+  min-width: 54px;
+  text-align: center;
+  display:flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.button input{
+  padding: 8px 20px;
+  background-color: #303134;
+  box-shadow: 0 1px 3px rgba(23,23,23,0.24);
+  border: 1px solid transparent;
+  color: #e8eaed;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+  border-radius: 4px;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+}
+
+.button input:hover{
+  border-color:#5f6368;
+}
+
+
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 800px;
+  align-items: center;
+  width: 100%;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 30px 0 30px 40px; 
+  justify-content: start; 
+
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr; 
+  gap: 15px 15px;
+  align-items: center;
+  color: #bdc1c6;
+  width: 100%;
+  margin: -5px 0 30px 40px; 
+  justify-content: start;   
+}
+
+.grid-form label {
+  font-weight: 500;
+  text-align: left;
+}
+
+.grid-form input {
+  
+  outline: none;
+  width: 100%;            
+  padding: 12px;
+  background: #1f1f1f;
+  border: 1px solid #5c5f5e;
+  color: #bdc1c6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.grid-form span {
+  font-size: 14px;
+  color: #ccc;
+  white-space: normal;
+  text-align: left;    
+}
+
+.grid-form .full-row {
+  grid-column: 1 / span 3;
+  text-align: left; 
+  margin-top: 20px;
+  transition: border-color 0.3s ease;
+}
+.grid-form .full-row:hover{
+  border-color: white;
+}
+
+
+
+.full-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.full-row input[type="submit"]{ 
+  width: auto;
+  flex: 0 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  background: #8ab4f8;
+  border: 1px solid #8ab4f8;
+  color: #202124;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 5px 12px;           /* 👈 keeps button only as wide as text */
+  
+}
+
+.full-row input:hover {
+  background: #aecbfa;
+}
