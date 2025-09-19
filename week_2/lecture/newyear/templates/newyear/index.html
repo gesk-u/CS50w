@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it New Year's</title>
+        <link href="{% static 'newyear/styles.css' %}" rel="stylesheet"> <!-- {% static 'newyear/styles.css' %} in case of change the road od css file djanga will fetch it-->
+    </head>
+    <body>
+        {% if newyear %} <!-- "newyear is a value from dew index in views.py" -->
+            <h1> YES </h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    </body>
+</html>
